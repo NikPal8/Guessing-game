@@ -249,26 +249,37 @@
 //________________________________________________________________________________________________________________________
 //Guessing game 10
 
-const num = Math.floor(Math.random() * 10) + 1;
-let guess = parseInt(prompt("Guess the number between 1 & 10?"));
+let checkEscape = false;
+document.addEventListener('keydown', function(event){
+    console.log(event.key)
+	if(event.key === "Escape"){
+		checkEscape = true;
+	}
+});
 
+const num = Math.floor(Math.random() * 10) + 1;
 let attempts = 1;
+let guess;
 
 while (parseInt(guess) !== num) {
-    attempts++;
-    if( guess < num) {
+    if(!guess && attempts === 1) {
+        guess = parseInt(prompt("Guess the number between 1 & 10?"));
+    } else if (guess === null ) {
+        break;
+    } else if( guess < num) {
         guess = prompt("Too low", '');
     } else if (guess > num) {
         guess = prompt("Too high", '');
     } else if (guess === "answer") {
         guess = prompt(`The number is ${num}, enter guess!`);
     } else {
-        guess = prompt("Invalid guess!", '');
+        if(checkEscape === true) break;
+        // guess = prompt("Invalid guess!", '');
     }
-    if (guess === null) break;
+    attempts++;
 }
 
-if (guess === null) {
+if (guess === null || guess === '' || isNaN(guess)) {
     alert(`Game cancelled!`);
 } else {
     alert(`You guessed it! ${num} in ${attempts} tries`);
