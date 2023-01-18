@@ -1,0 +1,14 @@
+const seatingChart = [
+    ['Kristen', 'Erik', 'Namita'],
+    ['Geoffrey', 'Juanita', 'Antonio', 'Kevin'],
+    ['Yuma', 'Sakura', 'Jack', 'Erika']
+];
+
+for (let i = 0; i < seatingChart.length; i++) { //runs through the array seatingChart.length = 3
+    const team = seatingChart[i]; 
+    console.log(`team ${i + 1}`);
+    console.log(`${team[0]} - Team Captain`);
+    for (let j = 0; j < team.length; j++) {
+        console.log(`${j + 1} ${team[j]} `);
+    }
+}
