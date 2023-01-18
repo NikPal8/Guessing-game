@@ -11,7 +11,7 @@ for (let i = 0; i < seatingChart.length; i++) { //runs through the array seating
     // console.log(`${team[0]} - Team Captain`); removed this
     for (let j = 0; j < team.length; j++) {
         if(j === 0) { // added this
-            console.log(`${team[j]} - Team Captain`); //  added this
+            console.log(`${j + 1} ${team[j]} - Team Captain`); //  added this
         } else { //  added this
             console.log(`${j + 1} ${team[j]} `); // put this in the else condition
         }
