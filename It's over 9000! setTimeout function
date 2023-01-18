@@ -1,0 +1,100 @@
+console.log("Pause the video at just after 15 seconds")
+console.log("Then press play on the count of 1!")
+
+setTimeout(() => {
+    console.log("Starts in 3") //this is delayed until 11 seconds!
+}, 10000) 
+setTimeout(() => {
+    console.log("Starts in 2")
+}, 13000)
+setTimeout(() => {
+    console.log("Starts in 1")
+}, 15000)
+
+setTimeout(() => {
+    console.log("Napa: Come on, hah!")
+}, 17000)
+
+setTimeout(() => {
+    console.log("Napa: I haven't got all day!")
+}, 18000)
+
+setTimeout(() => {
+    console.log("Napa: Heeh!")
+}, 20000)
+
+setTimeout(() => {
+    console.log("Nappa: I want to see what the great Kakarot's made of!?")
+}, 21000)
+
+setTimeout(() => {
+    console.log("Goku: Hah, you want me?")
+}, 24000)
+
+setTimeout(() => {
+    console.log("Goku: You got me!")
+}, 26000)
+
+setTimeout(() => {
+    let goku = 5000;
+for (let i = 1; i <= 1; i++) {
+    const powerLevel = setInterval(() => {
+    goku += 271;
+    if (goku > 9600) {
+        clearInterval(powerLevel);
+    }  else if (goku < 8000) {
+        console.log(`Scouter: ${goku}`);
+    }  else if (goku > 9000) {
+    console.log(`Scouter: ${goku -= 123}`);
+    } else {
+        console.log(`Scouter: ${goku += 297}`);
+    } 
+    
+},2000)
+}
+}, 28000)
+
+setTimeout(() => {
+    console.log("Goku: Starts powering up...!")
+}, 28000)
+
+setTimeout(() => {
+    console.log("Gohan: All that's from my dad!?")
+}, 48000)
+
+setTimeout(() => {
+    console.log("Vegeta: Power levels...")
+}, 50800)
+
+setTimeout(() => {
+    console.log("Vegeta: 8 thousand how?")
+}, 52500)
+
+setTimeout(() => {
+    console.log("Vegeta: Wait... its over 9!?")
+}, 53500)
+
+setTimeout(() => {
+    console.log("Goku: Stops powering up!")
+    // clearInterval(powerLevel);
+}, 62000)
+
+
+setTimeout(() => {
+    console.log("Napa: Vegeta, what did you say his power level is?")
+}, 73000)
+
+setTimeout(() => {
+    console.log("Vegeta: Takes scouter off!")
+}, 76000)
+
+setTimeout(() => {
+    console.log("Vegeta: It's over 9 thousand!!!")
+}, 77000)
+
+setTimeout(() => {
+    console.log("Vegeta: Breaks Scouter!")
+}, 78500)
+
+//The above code requires this DBZ video to make sense!
+//https://www.youtube.com/watch?v=5196mjp9fcU
